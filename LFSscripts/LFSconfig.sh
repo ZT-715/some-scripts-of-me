@@ -1,5 +1,5 @@
 #!bin/bash
-# Script to set enviromental variables to the LFS.
+# Script to set enviroment to the LFS.
 
 echo 'LFS device partiton path':;
 read;
