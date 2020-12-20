@@ -2,10 +2,10 @@
 # Script to set enviroment to the LFS.
 
 echo 'LFS device partiton path':
-read
-if [[ -e ${REPLY} ]] 
-	then partition=${REPLY}
-else echo "Please insert a unmounted partition"
+read partition
+if [[ -e $partition ]] 
+	then echo '...'
+else echo "Please insert an usable umounted partition"
 fi
 
 export LFS=/mnt/lfs;
