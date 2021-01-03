@@ -5,7 +5,7 @@ echo 'LFS device partiton path':
 read partition
 if [[ -e $partition ]] 
 	then echo '...'
-else echo "Please insert an usable umounted partition"
+else echo "Please insert an usable unmounted partition"
 fi
 
 export LFS=/mnt/lfs;
@@ -19,4 +19,8 @@ if [[ !(-e $LFS/usr) ]]
 	then mkdir -v ${LFS}/usr
 fi
 mount -v -t ext4 $partition ${LFS}/usr
+
+if [[ !(-e $LFS/sources) ]] 
+	then mkdir -v $LFS/sources
+fi
 
