@@ -7,7 +7,7 @@ read partition
 if [[ -e $partition ]] 
 	then echo '...'
 
-	export LFS=/mnt/lfs;
+	export LFS=/mnt/lfs
 
 	if [[ !(-e $LFS) ]] 
 		then mkdir -pv $LFS
