@@ -1,2 +1,2 @@
-# myBashScripts
-Bash Shell scripts for myself
+# myScripts
+Scripts for myself
